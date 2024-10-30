@@ -17,14 +17,25 @@
  *     when to stop looping?
  *  c. how do you access individual characters of a String?
  *  d. how do you concatenate Strings? What operator do we use?
+ * 
+ * I: receive a random string
+ * O: a new string with characters in reverse order
+ * C:
+ * E
  */
 
 function reverseString(input) {
     // YOUR CODE GOES BELOW HERE //
-    
-    
-    
-    
+    // create a var to hold the new string
+    let reverseInput = "";
+
+    // for loop thru the input backwards
+    for (let i = input.length - 1; i >= 0;i--){
+      // within the loop add each char to the new string (+=)
+      reverseInput += input[i];
+    }
+    // outside thr for loop return the final string
+    return reverseInput;
     // YOUR CODE GOES ABOVE HERE //
 }
 
