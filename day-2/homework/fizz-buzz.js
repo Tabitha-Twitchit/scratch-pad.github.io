@@ -9,12 +9,28 @@
  *  b. BUT, for multiples of three print “Fizz” instead of the number.
  *  c. AND for the multiples of five print “Buzz”.
  *  d. FINALLY, for numbers which are multiples of both three and five print “FizzBuzz”.
+
+I no apparent input (no params), numbers generated inside func
+O print/log incremented nums with strings per criteria
+C
+E
+
 */
+
 function fizzBuzz() {
     // YOUR CODE GOES BELOW HERE //
-
-
-
+    for(let i = 1; i < 101 ; i++){
+        // console.log("we in for?") ; 
+        if(i % 3 === 0 && i % 5 === 0){
+          console.log("FizzBuzz");
+        } else if (i % 3 === 0){
+          console.log("Fizz");
+        } else if (i % 5 === 0){
+          console.log("Buzz");
+        } else {
+          console.log(i);
+          }
+      }
     // YOUR CODE GOES ABOVE HERE //
 }
 

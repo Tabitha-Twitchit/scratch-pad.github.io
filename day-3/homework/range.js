@@ -20,13 +20,38 @@
  *  a. create something to collect the output you'll return.
  *  b. you'll need a loop, which one is best?
  *  c. you'll wanna make use of the push() method of Array.
+ * 
+ * I 2 ints
+ * O 1 array with all ints between, including the original two
+ * C
+ * E
+ * 
  */
 function range(start, end) {
     // YOUR CODE GOES BELOW HERE //
-    
-    
-    
-    
+    // establish the container for our output
+    var outputArray = [];
+
+    // check the relationship between the two received ints (greater or less, for the purpose of loop direction)
+    if(start < end ){
+        // set i at the start and work up until end
+        for (let i = start; i <= end; i++){
+            // add each int along the way to the array
+          outputArray.push(i);
+        }
+    // check the opposite case
+    } else if (start > end){
+        // set i at our start (higher number!) and decrement down to end
+        for (let i = start; i >= end; i--){
+            // add those nums to our array
+          console.log("Got in start lesser")  
+          outputArray.push(i);
+        }
+    }
+// check the array before it goes out
+console.log(outputArray);
+// send it out
+return outputArray;    
     // YOUR CODE GOES ABOVE HERE //
 }
 

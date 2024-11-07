@@ -31,6 +31,8 @@
  *          
  *          WARNING: To pass this test, the LAST full name should have NO
  *          new-line character added after it!
+ * 
+ * NOTE: Look at the Data json file. That is what you're working
  */
 
 // YOUR CODE GOES BELOW HERE //
@@ -48,7 +50,12 @@ function makeContactList() {
     
     return {
         // we implemented the length api for you //
-       
+       length: function(){
+        return contacts.length;
+       },
+       addContact: function(contact){
+        contacts.push(contacts);
+       }
     }
 }
 
