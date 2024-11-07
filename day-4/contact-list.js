@@ -33,7 +33,14 @@
  *          new-line character added after it!
  * 
  * NOTE: Look at the Data json file. That is what you're working
- */
+
+I 
+O Returns a "contact object--implying an object with details for one contact"
+C
+E
+
+*/
+
 
 // YOUR CODE GOES BELOW HERE //
 function makeContact(id, nameFirst, nameLast) {
